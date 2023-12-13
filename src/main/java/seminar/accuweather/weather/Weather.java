@@ -1,5 +1,5 @@
 
-package org.max.lesson3.seminar.accuweather.weather;
+package seminar.accuweather.weather;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -9,9 +9,10 @@ import java.util.List;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "Headline",
-    "DailyForecasts"
+        "Headline",
+        "DailyForecasts"
 })
+
 public class Weather {
 
     @JsonProperty("Headline")
@@ -38,5 +39,4 @@ public class Weather {
     public void setDailyForecasts(List<DailyForecast> dailyForecasts) {
         this.dailyForecasts = dailyForecasts;
     }
-
 }

@@ -1,6 +1,5 @@
-package org.max.lesson3.demo.accuweather;
+package accuweather;
 
-import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeAll;
 
 import java.io.FileInputStream;
@@ -8,6 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+// по имени Properties можем получить название
 public abstract class AccuweatherAbstractTest {
 
     static Properties prop = new Properties();

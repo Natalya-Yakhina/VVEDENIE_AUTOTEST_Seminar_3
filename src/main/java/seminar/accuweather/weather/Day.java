@@ -1,5 +1,5 @@
 
-package org.max.lesson3.seminar.accuweather.weather;
+package seminar.accuweather.weather;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -7,11 +7,10 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "Icon",
-    "IconPhrase",
-    "HasPrecipitation",
-    "PrecipitationType",
-    "PrecipitationIntensity"
+        "Icon",
+        "IconPhrase",
+        "HasPrecipitation"
+
 })
 public class Day {
 
@@ -21,10 +20,7 @@ public class Day {
     private String iconPhrase;
     @JsonProperty("HasPrecipitation")
     private Boolean hasPrecipitation;
-    @JsonProperty("PrecipitationType")
-    private String precipitationType;
-    @JsonProperty("PrecipitationIntensity")
-    private String precipitationIntensity;
+
 
     @JsonProperty("Icon")
     public Integer getIcon() {
@@ -55,25 +51,4 @@ public class Day {
     public void setHasPrecipitation(Boolean hasPrecipitation) {
         this.hasPrecipitation = hasPrecipitation;
     }
-
-    @JsonProperty("PrecipitationType")
-    public String getPrecipitationType() {
-        return precipitationType;
-    }
-
-    @JsonProperty("PrecipitationType")
-    public void setPrecipitationType(String precipitationType) {
-        this.precipitationType = precipitationType;
-    }
-
-    @JsonProperty("PrecipitationIntensity")
-    public String getPrecipitationIntensity() {
-        return precipitationIntensity;
-    }
-
-    @JsonProperty("PrecipitationIntensity")
-    public void setPrecipitationIntensity(String precipitationIntensity) {
-        this.precipitationIntensity = precipitationIntensity;
-    }
-
 }

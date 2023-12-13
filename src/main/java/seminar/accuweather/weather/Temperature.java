@@ -1,5 +1,5 @@
 
-package org.max.lesson3.seminar.accuweather.weather;
+package seminar.accuweather.weather;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
